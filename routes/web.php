@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/top', 'PagesController@top');
+
+Route::get('/bungo', 'PagesController@bungoTop');
