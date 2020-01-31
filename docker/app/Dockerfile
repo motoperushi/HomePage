@@ -1,7 +1,8 @@
 FROM php:7.2-fpm
 
 RUN apt-get update \
-    && apt-get install -y zlib1g-dev mysql-client libpng-dev libjpeg-dev gnupg curl wget \
+    && apt-get install -y zlib1g-dev libzip-dev zip mariadb-client-10.3 libpng-dev libjpeg-dev gnupg curl wget \
+    && docker-php-ext-configure zip --with-libzip \
     && docker-php-ext-configure gd --with-png-dir=/usr/include --with-jpeg-dir=/usr/include \
     && docker-php-ext-install zip pdo_mysql gd
 
