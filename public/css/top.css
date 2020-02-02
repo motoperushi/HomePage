@@ -1,0 +1,10 @@
+.top-outer {
+    position: relative;
+    padding-bottom: 30px; /* 次の表示物の開始位置が30px下にずれる */
+}
+
+.top-outer .main-vis {
+    background: url("../img/top.jpg") no-repeat;
+    height: 570px;
+    background-position: center top;
+}

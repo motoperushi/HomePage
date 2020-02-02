@@ -1,0 +1,34 @@
+.navi-top {
+    background: url("../img/navi.png") repeat-x left top;
+    background-size: cover;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.navi-top li {
+    float: left;
+    width: 175px;
+    text-align: center;
+    line-height: 80px;  /* 左に表示される画像に合わせる(global_icon.png) */
+    list-style: none;
+    text-decoration: none;
+}
+
+.navi-top li a {
+    color: #ffffff;
+    font-weight: bold;
+    display: block;
+    /*text-indent: -9999px;*/ /* メニューを画像にする場合有効化 */
+}
+
+.navi-top li:first-child {
+    width: 245px;
+}
+
+.navi-top li:first-child a {
+    background-image: url("../img/global_icon.png");
+    height: 80px;
+    text-indent: -9999px; /* 文字は画面外へ */
+}
